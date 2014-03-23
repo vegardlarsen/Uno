@@ -10,8 +10,10 @@
         <h1 class="panel-cover__title panel-title"><a href="{{@blog.url}}" title="link to homepage for {{@blog.title}}">{{@blog.title}}</a></h1>
         {{!-- <span class="panel-cover__subtitle panel-subtitle">Visual Designer</span> --}}
         <hr class="panel-cover__divider" />
+        {{#if @blog.description}}
         <p class="panel-cover__description">{{@blog.description}}</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        {{/if}}
 
         <div class="navigation-wrapper">
 

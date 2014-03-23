@@ -35,10 +35,10 @@ a {
 
   &:hover {
     color: $hover-color;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
+    -o-transition:.25s;
+    -ms-transition:.25s;
+    -moz-transition:.25s;
+    -webkit-transition:.25s;
   }
 
 }
@@ -52,7 +52,7 @@ h5 {
   margin-top: .8em;
   margin-bottom: .4em;
   font-family: $serif-font;
-  font-weight: lighter;
+  font-weight: 700;
   color: $gray-darkest;
   -webkit-font-smoothing: antialiased;
 }
@@ -100,9 +100,9 @@ em {
 blockquote {
   margin: 1em 0;
   padding: 2em 0;
-  background: $gray-lightest;
-  border: 1px solid $gray-lighter;
-  border-radius: $border-radius;
+  //background: $gray-lightest;
+  //border: 1px solid $gray-lighter;
+  //border-radius: $border-radius;
   font-family: $serif-font;
   font-weight: lighter;
   font-style: italic;
@@ -117,6 +117,17 @@ blockquote {
 
   }
 
+  cite {
+    display: block;
+    text-align: right;
+    margin-right: 1em;
+    font-size: 0.76em;
+    font-family: $sans-font;
+    font-style: normal;
+    &:before {
+      content: " — ";
+    }
+  }
 }
 
 // ------------------------------
@@ -183,15 +194,15 @@ pre {
 
 .excerpt {
   margin: 0;
-  font-size: .9em;
-  color: $gray-dark;
+  //font-size: .9em;
+  color: $gray-darkest;
 }
 
 .intro {
   font-family: $serif-font;
   font-size: 1.2em;
   font-weight: lighter;
-  color: $gray-dark;
+  color: $gray-darkest;
 }
 
 .block-heading {
@@ -270,7 +281,7 @@ pre {
 .logo {
   border-radius: 50%;
   border: 3px solid #FFF;
-  @include box-shadow(0 0 1px 1px rgba(000,000,000,.3));
+  box-shadow: 0 0 1px 1px rgba(000,000,000,.3);
 }
 
 // ------------------------------
